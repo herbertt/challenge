@@ -1,0 +1,46 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User name:</strong>
+  <%= @consultum.user_name %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @consultum.email %>
+</p>
+
+<p>
+  <strong>Empresa:</strong>
+  <%= @consultum.empresa %>
+</p>
+
+<p>
+  <strong>Faturamento:</strong>
+  <%= @consultum.faturamento %>
+</p>
+
+<p>
+  <strong>Val titulo:</strong>
+  <%= @consultum.val_titulo %>
+</p>
+
+<p>
+  <strong>Vencimento:</strong>
+  <%= @consultum.vencimento %>
+</p>
+<p>
+  <strong>=============================</strong>
+  <strong><h3>Resultado Total:</h3></strong>
+</p>
+<p>
+  <strong>Taxa Total(%):</strong>
+  <%= @taxa %>
+  <strong>Valor Descontado(R$):</strong>
+  <%= @total_descontado %>
+  <strong>Valor Total (R$):</strong>
+  <%= @total_cliente %>
+</p>
+
+<%= link_to 'Edit', edit_consultum_path(@consultum) %> |
+<%= link_to 'Back', consulta_path %>

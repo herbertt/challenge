@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user_name: MyString
+  email: MyString
+  empresa: MyString
+  faturamento: 1.5
+  val_titulo: 1.5
+  vencimento: 1
+
+two:
+  user_name: MyString
+  email: MyString
+  empresa: MyString
+  faturamento: 1.5
+  val_titulo: 1.5
+  vencimento: 1

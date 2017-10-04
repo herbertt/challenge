@@ -1,0 +1,47 @@
+<%= form_with(model: consultum, local: true) do |form| %>
+  <% if consultum.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(consultum.errors.count, "error") %> prohibited this consultum from being saved:</h2>
+
+      <ul>
+      <% consultum.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :user_name %>
+    <%= form.text_field :user_name, id: :consultum_user_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :email %>
+    <%= form.text_field :email, id: :consultum_email %>
+  </div>
+
+  <div class="field">
+    <%= form.label :empresa %>
+    <%= form.text_field :empresa, id: :consultum_empresa %>
+  </div>
+
+  <div class="field">
+    <%= form.label :faturamento %>
+    <%= form.text_field :faturamento, id: :consultum_faturamento %>
+  </div>
+
+  <div class="field">
+    <%= form.label :val_titulo %>
+    <%= form.text_field :val_titulo, id: :consultum_val_titulo %>
+  </div>
+
+  <div class="field">
+    <%= form.label :vencimento %>
+    <%= form.number_field :vencimento, id: :consultum_vencimento %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
